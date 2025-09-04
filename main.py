@@ -20,8 +20,6 @@ class ResearchResponse(BaseModel):
 llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
 parser = PydanticOutputParser(pydantic_object=ResearchResponse)
 # response = llm.invoke("What is the meaning of life ?")
-# print(response)
-
 prompt = ChatPromptTemplate.from_messages(
     [
         (
