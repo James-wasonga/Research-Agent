@@ -47,7 +47,7 @@ agent = create_tool_calling_agent(
 )
 
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
-# maknig users key the query themselves
+# making users key the query themselves
 query = input("What can I help you research?")
 raw_response = agent_executor.invoke({"query": query})
 
